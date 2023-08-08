@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Binary</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  </head>
-  <body>
-    <table text-align="center">
-      <tr>
-        <th class="header">128</th>
-        <th class="header">64</th>
-        <th class="header">32</th>
-        <th class="header">16</th>
-        <th class="header">8</th>
-        <th class="header">4</th>
-        <th class="header">2</th>
-        <th class="header">1</th>
-      </tr>
-      <tr>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="firstLever" onclick="changeLeverOne()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="thirdLever" onclick="changeLeverThree()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="fourthLever" onclick="changeLeverFour()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="secondLever" onclick="changeLeverTwo()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="fifthLever" onclick="changeLeverFive()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="sixthLever" onclick="changeLeverSix()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="seventhLever" onclick="changeLeverSeven()"></td>
-        <td class="header"><img src="assets/img/lever_up.png" alt="binary lever_up" height="200" width="auto" id="eighthLever" onclick="changeLeverEight()"></td>
-      </tr>
-      <tr id="bin">
-        <td id="binary" colspan="4">0000</td>
-        <td id="binary2" colspan="4">0000</td>
-      </tr>
-      <tr id="dec">
-        <td colspan="8" id="decimal">00</td>
-      </tr>
-      <tr id="hex">
-        <td id="hexidecimal" colspan="4">0</td>
-        <td id="hexidecimal2" colspan="4">0</td>
-      </tr>
 
+<head>
+  <meta charset="utf-8">
+  <title>Binary</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <section class="container">
+    <table class="table">
+      <tr class="headingsRow">
+        <th>128</th>
+        <th>64</th>
+        <th>32</th>
+        <th>16</th>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+      <tr class="leversRow">
+        <td><img src="assets/img/lever_up.png" class="lever" value="128"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="64"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="32"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="16"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="8"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="4"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="2"></td>
+        <td><img src="assets/img/lever_up.png" class="lever" value="1"></td>
+      </tr>
+      <tr id="binRow">
+        <td class="outputLabel" colspan="2">binary</td>
+        <td id="binary" colspan="6">0000</td>
+      </tr>
+      <tr id="decRow">
+        <td class="outputLabel" colspan="2">decimal</td>
+        <td id="decimal" colspan="6">00</td>
+      </tr>
+      <tr id="hexRow">
+        <td class="outputLabel" colspan="2">hexadecimal</td>
+        <td id="hexadecimal" colspan="6">00</td>
+      </tr>
     </table>
-    <script src="assets/js/script.js"></script>
-  </body>
+  </section>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+
 </html>
